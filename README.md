@@ -20,4 +20,4 @@ End-To-End Data Engineering Project on Real-Time Stock Market Data using Kafka u
 ## Dataset Used
 We can use any dataset, we are mainly interested in the operation side of Data Engineering (building data pipeline).
 
-Here is the dataset used: [indexProcessed.csv](https://github.com/darshilparmar/stock-market-kafka-data-engineering-project/blob/main/indexProcessed.csv)
+Here is the dataset used: [indexProcessed.csv](https://raw.githubusercontent.com/Kush-Bhatt-30/StockmarketAnalysis/refs/heads/main/indexProcessed.csv)
