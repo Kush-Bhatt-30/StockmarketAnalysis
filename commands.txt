@@ -1,6 +1,6 @@
 start : EC2 using
 --------------------------------------
-ssh -i directory/location of .pem file ec2-user@13.127.191.58(ip of that server)
+ssh -i directory/location of .pem file ec2-user@(ip of that server)
 ssh -i C:\Users\kushm\Downloads\kafka-stock-market-project.pem ec2-user@13.127.191.58
 
 download kafka : 
@@ -37,14 +37,14 @@ Create the topic:
 -----------------------------
 Duplicate the session & enter in a new console --
 cd kafka_2.12-3.3.1
-bin/kafka-topics.sh --create --topic demo_test --bootstrap-server 13.127.87.252:9092 --replication-factor 1 --partitions 1
+bin/kafka-topics.sh --create --topic demo_test --bootstrap-server (ip of ec2 server):9092 --replication-factor 1 --partitions 1
 
 Start Producer:
 --------------------------
-bin/kafka-console-producer.sh --topic demo_test --bootstrap-server 13.127.87.252:9092 
+bin/kafka-console-producer.sh --topic demo_test --bootstrap-server (ip of ec2 server):9092 
 
 Start Consumer:
 -------------------------
 Duplicate the session & enter in a new console --
 cd kafka_2.12-3.3.1
-bin/kafka-console-consumer.sh --topic demo_test --bootstrap-server 13.127.87.252:9092
+bin/kafka-console-consumer.sh --topic demo_test --bootstrap-server (ip of ec2 server):9092
